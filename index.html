@@ -12,6 +12,7 @@
             padding: 0;
         }
         .header {
+        	width: 100%; 
             position: sticky;
             top: 0;
             display: flex;
@@ -38,13 +39,7 @@
         .menu-item:hover {
             color: #006400;
         }
-        .footer {
-            width: 100%; 
-            justify-content: center; 
-            background-color: #3a9793; 
-            text-align: center; 
-            color: white; 
-        }
+
         .audio-player {
             position: absolute; 
             top: 150px; 
@@ -59,7 +54,6 @@
            margin :20px; 
            color:white; 
        }
-       /* Estilos para o menu suspenso */
        .dropdown {
            position:relative; 
            display:inline-block; 
@@ -89,11 +83,16 @@
             background-color: #3a9793; 
             text-align: center; 
             color: white;
-            padding: 10px;
+            padding: 8px;
         }
-       
        .normal-text {
            text-transform:none;
+       }
+       .media-content {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 60px;
        }
     </style>
     <title>HOME</title>
@@ -112,24 +111,20 @@
    
    <h1 class="title">VÍDEOS E EU</h1>
 
-   <div class="section">
-       <h2>Bem vindo(a) à página Processamento de Vídeo!</h2>
+  <div class="section">
+    <h2>Bem vindo(a) à página Processamento de Vídeo!</h2>
 
-       <p class="normal-text">Esta página foi criada para a disciplina Processamento de Vídeo do curso de Engenharia de Informação da Universidade Federal do ABC.</p>
+    <p class="normal-text">Esta página foi criada para a disciplina Processamento de Vídeo do curso de Engenharia de Informação da Universidade Federal do ABC.</p>
 
-
-		<!-- Imagem do usuário -->
+    <div class="media-content">
         <img src="https://raw.githubusercontent.com/AndreMarques2002/processamentoVideoLabs/main/imagem_lab_0.jpg" alt="Foto do usuário" width="400">
 
-        <!-- Primeiro vídeo -->
         <iframe src="https://drive.google.com/file/d/16kUmLpwpSTq71dvjpHNhwGsQM7iWgtuE/preview" width="300" height="530"></iframe>
-       
-        <!-- Segundo vídeo com largura maior -->
+
         <iframe src="https://www.youtube.com/embed/fPufVcLAwdg" width="825" height="530"></iframe>
-        
+    </div>
+  </div>
 <br>
-
-
    <div class="footer">
        <p>PROCESSAMENTO DE VÍDEO</p>
    </div>
